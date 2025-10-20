@@ -21,8 +21,8 @@ Building ethical AI shouldn't require a PhD in ethics or months of manual audits
 pip install ethics-ai-commons
 
 # Or install from source
-git clone https://github.com/ethics-ai-commons/ethics-ai-commons
-cd ethics-ai-commons
+git clone https://github.com/shellen/ethica
+cd ethica
 pip install -e .
 
 # Initialize in your AI project
@@ -170,8 +170,8 @@ metadata:
 
 ```bash
 # Clone repository
-git clone https://github.com/ethics-ai-commons/ethics-ai-commons
-cd ethics-ai-commons
+git clone https://github.com/shellen/ethica
+cd ethica
 
 # Setup development environment
 python -m venv venv

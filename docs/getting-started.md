@@ -13,8 +13,8 @@ pip install ethics-ai-commons
 ### From Source
 
 ```bash
-git clone https://github.com/ethics-ai-commons/ethics-ai-commons
-cd ethics-ai-commons
+git clone https://github.com/shellen/ethica
+cd ethica
 pip install -e .
 ```
 

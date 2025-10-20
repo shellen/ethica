@@ -10,7 +10,7 @@ metadata:
     Provides a comprehensive framework for ethical AI development and deployment.
   source_url: "https://www.unesco.org/en/artificial-intelligence/recommendation-ethics"
   license: "CC-BY-SA-4.0"
-  maintainer: "ethics-ai-commons"
+  maintainer: "shellen"
   tags:
     - international
     - government

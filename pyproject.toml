@@ -49,10 +49,10 @@ dev = [
 ethics-ai = "ethics_ai.__main__:app"
 
 [project.urls]
-Homepage = "https://github.com/ethics-ai-commons/ethics-ai-commons"
-Documentation = "https://ethics-ai-commons.readthedocs.io"
-Repository = "https://github.com/ethics-ai-commons/ethics-ai-commons"
-Issues = "https://github.com/ethics-ai-commons/ethics-ai-commons/issues"
+Homepage = "https://github.com/shellen/ethica"
+Documentation = "https://github.com/shellen/ethica/blob/main/docs/getting-started.md"
+Repository = "https://github.com/shellen/ethica"
+Issues = "https://github.com/shellen/ethica/issues"
 
 [tool.setuptools.packages.find]
 where = ["."]

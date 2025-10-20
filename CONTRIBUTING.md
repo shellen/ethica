@@ -15,8 +15,8 @@ Thanks for your interest in contributing! This project aims to make AI ethics co
 
 1. **Fork and Clone**
    ```bash
-   git clone https://github.com/your-username/ethics-ai-commons
-   cd ethics-ai-commons
+   git clone https://github.com/your-username/ethica
+   cd ethica
    ```
 
 2. **Set Up Development Environment**
