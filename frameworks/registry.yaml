@@ -1,0 +1,34 @@
+# ABOUTME: Framework registry listing all available ethics frameworks
+# ABOUTME: Categorizes frameworks by type (international, industry, regulatory)
+
+version: "1.0"
+
+frameworks:
+  international:
+    - id: unesco-2021
+      name: "UNESCO AI Ethics Recommendation 2021"
+      version: "1.0.0"
+      description: "First global standard on AI ethics adopted by 193 member states"
+      status: "available"
+      tags:
+        - international
+        - government
+        - comprehensive
+
+  # Placeholders for future frameworks
+  industry:
+    # - id: ieee-certifaied
+    #   name: "IEEE CertifAIEd"
+    #   version: "1.0.0"
+    #   status: "planned"
+
+  regulatory:
+    # - id: eu-ai-act
+    #   name: "EU AI Act"
+    #   version: "1.0.0"
+    #   status: "planned"
+    #
+    # - id: nist-ai-rmf
+    #   name: "NIST AI Risk Management Framework"
+    #   version: "1.0.0"
+    #   status: "planned"

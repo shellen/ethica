@@ -1,0 +1,152 @@
+# ABOUTME: UNESCO AI Ethics Recommendation 2021 framework specification
+# ABOUTME: Defines principles, checks, and compliance levels
+
+metadata:
+  id: "unesco-2021"
+  name: "UNESCO AI Ethics Recommendation 2021"
+  version: "1.0.0"
+  description: |
+    First global standard on AI ethics adopted by 193 member states.
+    Provides a comprehensive framework for ethical AI development and deployment.
+  source_url: "https://www.unesco.org/en/artificial-intelligence/recommendation-ethics"
+  license: "CC-BY-SA-4.0"
+  maintainer: "ethics-ai-commons"
+  tags:
+    - international
+    - government
+    - comprehensive
+
+principles:
+  - id: "transparency"
+    name: "Transparency and Explainability"
+    description: |
+      AI systems must be understandable to stakeholders. The level of
+      transparency should be appropriate to the context and impact of the system.
+    weight: "critical"
+    related_principles:
+      - accountability
+
+  - id: "fairness"
+    name: "Fairness and Non-discrimination"
+    description: |
+      AI systems should not create or reinforce unfair bias and discrimination.
+    weight: "critical"
+    related_principles:
+      - transparency
+      - accountability
+
+  - id: "privacy"
+    name: "Right to Privacy and Data Protection"
+    description: |
+      Privacy must be protected and promoted throughout the AI lifecycle.
+    weight: "critical"
+
+  - id: "accountability"
+    name: "Responsibility and Accountability"
+    description: |
+      Clear accountability mechanisms must exist for AI systems.
+    weight: "critical"
+    related_principles:
+      - transparency
+
+  - id: "safety"
+    name: "Safety and Security"
+    description: |
+      AI systems must be safe and secure throughout their lifecycle.
+    weight: "high"
+
+checks:
+  # Transparency checks
+  - id: "transparency-001"
+    name: "Model Card Documentation"
+    principle: "transparency"
+    severity: "error"
+    type: "file-exists"
+    description: "Project must include model card documentation"
+    config:
+      paths:
+        - "MODEL_CARD.md"
+        - "docs/MODEL_CARD.md"
+        - "docs/model_card.md"
+    help_url: "https://modelcards.withgoogle.com/"
+
+  - id: "transparency-002"
+    name: "Explainability Implementation"
+    principle: "transparency"
+    severity: "warning"
+    type: "dependency-check"
+    description: "Project should implement explainability methods"
+    config:
+      packages:
+        - "shap"
+        - "lime"
+        - "eli5"
+        - "interpret"
+      require_any: true
+
+  # Fairness checks
+  - id: "fairness-001"
+    name: "Fairness Metrics Library"
+    principle: "fairness"
+    severity: "warning"
+    type: "dependency-check"
+    description: "Project should use fairness evaluation tools"
+    config:
+      packages:
+        - "fairlearn"
+        - "aif360"
+        - "themis-ml"
+      require_any: true
+
+  # Privacy checks
+  - id: "privacy-001"
+    name: "Privacy Impact Assessment"
+    principle: "privacy"
+    severity: "error"
+    type: "file-exists"
+    description: "Project must document privacy impact"
+    config:
+      paths:
+        - "PRIVACY_IMPACT_ASSESSMENT.md"
+        - "docs/PRIVACY_IMPACT_ASSESSMENT.md"
+        - "docs/privacy_impact_assessment.md"
+
+  # Accountability checks
+  - id: "accountability-001"
+    name: "Version Control"
+    principle: "accountability"
+    severity: "error"
+    type: "file-exists"
+    description: "Project must use version control"
+    config:
+      paths:
+        - ".git"
+
+compliance_levels:
+  basic:
+    name: "Basic Compliance"
+    description: "Minimum ethics requirements for AI projects"
+    required_principles:
+      - transparency
+      - accountability
+    minimum_check_pass_rate: 0.5
+    badge_color: "yellow"
+
+  standard:
+    name: "Standard Compliance"
+    description: "Comprehensive ethics implementation"
+    required_principles:
+      - transparency
+      - fairness
+      - privacy
+      - accountability
+    minimum_check_pass_rate: 0.7
+    badge_color: "green"
+
+  verified:
+    name: "Verified Compliance"
+    description: "Full ethics compliance with verification"
+    required_principles: "all"
+    minimum_check_pass_rate: 0.95
+    requires_external_audit: true
+    badge_color: "blue"
