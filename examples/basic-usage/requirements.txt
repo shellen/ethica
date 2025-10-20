@@ -1,0 +1,9 @@
+# Core ML dependencies
+numpy>=1.20.0
+scikit-learn>=1.0.0
+
+# Explainability (required by UNESCO transparency checks)
+shap>=0.40.0
+
+# Fairness (required by UNESCO fairness checks)
+fairlearn>=0.8.0

@@ -1,0 +1,21 @@
+version: "1.0"
+
+frameworks:
+  - id: "unesco-2021"
+    enabled: true
+    compliance_level: "standard"
+
+exclude_checks: []
+
+custom_checks: []
+
+metadata:
+  project_name: "Basic Usage Example"
+  team: "Ethics AI Commons Examples"
+  last_assessed: null
+  assessment_tool_version: "0.1.0"
+
+reporting:
+  formats:
+    - "text"
+  output_dir: "./ethics-reports"
