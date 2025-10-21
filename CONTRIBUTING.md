@@ -1,4 +1,4 @@
-# Contributing to Ethics AI Commons
+# Contributing to Ethica
 
 Thanks for your interest in contributing! This project aims to make AI ethics compliance accessible to all developers.
 
@@ -39,9 +39,9 @@ Thanks for your interest in contributing! This project aims to make AI ethics co
 5. **Run Tests and Linting**
    ```bash
    pytest
-   black ethics_ai/
-   ruff check ethics_ai/
-   mypy ethics_ai/
+   black ethica/
+   ruff check ethica/
+   mypy ethica/
    ```
 
 6. **Commit and Push**
@@ -82,7 +82,7 @@ Thanks for your interest in contributing! This project aims to make AI ethics co
 ## Project Structure
 
 ```
-ethics_ai/
+ethica/
 ├── cli/          # CLI commands
 ├── core/         # Core engine (registry, checker)
 ├── checks/       # Check implementations
@@ -110,7 +110,7 @@ To add a new check to the UNESCO framework:
    ```
 
 2. **Implement if needed** (for custom check types):
-   - Create check class in `ethics_ai/checks/`
+   - Create check class in `ethica/checks/`
    - Inherit from `BaseCheck`
    - Implement `run()` method
 

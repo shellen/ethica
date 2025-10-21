@@ -1,17 +1,17 @@
-# ABOUTME: CLI entry point for ethics-ai command
+# ABOUTME: CLI entry point for ethica command
 # ABOUTME: Sets up typer app and registers all command groups
 
 """
-Main CLI entry point for ethics-ai-commons.
+Main CLI entry point for ethica.
 """
 
 import typer
 from rich.console import Console
 
-from ethics_ai.cli import init, check, frameworks
+from ethica.cli import init, check, frameworks
 
 app = typer.Typer(
-    name="ethics-ai",
+    name="ethica",
     help="Framework-agnostic platform for AI ethics compliance checking",
     no_args_is_help=True,
 )
@@ -27,9 +27,9 @@ app.add_typer(frameworks.app, name="frameworks")
 @app.command()
 def version() -> None:
     """Show version information"""
-    from ethics_ai import __version__
+    from ethica import __version__
 
-    console.print(f"ethics-ai version {__version__}")
+    console.print(f"ethica version {__version__}")
 
 
 def main() -> None:

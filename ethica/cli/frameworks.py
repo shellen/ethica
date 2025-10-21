@@ -1,4 +1,4 @@
-# ABOUTME: Implementation of 'ethics-ai frameworks' command group
+# ABOUTME: Implementation of 'ethica frameworks' command group
 # ABOUTME: Lists and inspects available ethics frameworks
 
 """
@@ -10,7 +10,7 @@ from rich.console import Console
 from rich.table import Table
 from rich.panel import Panel
 
-from ethics_ai.core.registry import FrameworkRegistry
+from ethica.core.registry import FrameworkRegistry
 
 app = typer.Typer(help="Manage ethics frameworks")
 console = Console()
@@ -45,7 +45,7 @@ def list_frameworks() -> None:
 
     console.print(table)
     console.print(
-        f"\nUse [cyan]ethics-ai frameworks info <id>[/cyan] for detailed information"
+        f"\nUse [cyan]ethica frameworks info <id>[/cyan] for detailed information"
     )
 
 

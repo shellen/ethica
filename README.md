@@ -1,4 +1,4 @@
-# Ethics AI Commons
+# Ethica
 
 **Framework-agnostic platform for AI ethics compliance checking**
 
@@ -6,7 +6,7 @@ Think "ESLint for AI Ethics" - pluggable frameworks, automated checks, CI/CD int
 
 ## Why Use This?
 
-Building ethical AI shouldn't require a PhD in ethics or months of manual audits. Ethics AI Commons:
+Building ethical AI shouldn't require a PhD in ethics or months of manual audits. Ethica:
 
 - **Automates compliance checking** against global standards like UNESCO's AI Ethics Recommendation
 - **Catches issues early** in development, not after deployment
@@ -18,7 +18,7 @@ Building ethical AI shouldn't require a PhD in ethics or months of manual audits
 
 ```bash
 # Install (when published)
-pip install ethics-ai-commons
+pip install ethica
 
 # Or install from source
 git clone https://github.com/shellen/ethica
@@ -27,7 +27,7 @@ pip install -e .
 
 # Initialize in your AI project
 cd your-ai-project
-ethics-ai init
+ethica init
 
 ✓ Created .ai-ethics.yaml with unesco-2021 framework
 ✓ Created template files in docs/
@@ -35,7 +35,7 @@ ethics-ai init
   - PRIVACY_IMPACT_ASSESSMENT.md
 
 # Check compliance
-ethics-ai check
+ethica check
 
 Checking against unesco-2021 (standard level)...
 
@@ -60,7 +60,7 @@ Pass Rate: 60.0%
 Checks Passed: 3/5
 
 # List available frameworks
-ethics-ai frameworks list
+ethica frameworks list
 
 Available Ethics Frameworks
 ┌──────────────┬─────────────────────────────────────────┬─────────┬──────────┐
@@ -107,16 +107,16 @@ Available Ethics Frameworks
 
 ```bash
 # Initialize with default settings (UNESCO framework, standard level)
-ethics-ai init
+ethica init
 
 # Check compliance
-ethics-ai check
+ethica check
 
 # Check with verbose output (shows all checks, including passing ones)
-ethics-ai check --verbose
+ethica check --verbose
 
 # Output results as JSON
-ethics-ai check --output json > ethics-report.json
+ethica check --output json > ethics-report.json
 ```
 
 ### Using Different Compliance Levels
@@ -129,20 +129,20 @@ The UNESCO framework supports three compliance levels:
 
 ```bash
 # Initialize with basic level
-ethics-ai init --level basic
+ethica init --level basic
 
 # Override level when checking
-ethics-ai check --level verified
+ethica check --level verified
 ```
 
 ### Framework Information
 
 ```bash
 # List all available frameworks
-ethics-ai frameworks list
+ethica frameworks list
 
 # Get detailed info about a framework
-ethics-ai frameworks info unesco-2021
+ethica frameworks info unesco-2021
 ```
 
 ### Configuration File
@@ -182,8 +182,8 @@ pip install -e ".[dev]"
 pytest
 
 # Format code
-black ethics_ai/
-ruff check ethics_ai/
+black ethica/
+ruff check ethica/
 ```
 
 ## Roadmap

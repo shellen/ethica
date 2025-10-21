@@ -8,8 +8,8 @@ Integration tests for UNESCO framework checks.
 import pytest
 from pathlib import Path
 
-from ethics_ai.core.registry import FrameworkRegistry
-from ethics_ai.core.checker import CheckEngine
+from ethica.core.registry import FrameworkRegistry
+from ethica.core.checker import CheckEngine
 
 
 def test_compliant_project():

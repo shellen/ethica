@@ -8,9 +8,9 @@ Tests for compliance checks.
 import pytest
 from pathlib import Path
 
-from ethics_ai.checks.base import CheckStatus, CheckSeverity
-from ethics_ai.checks.file_checks import FileExistsCheck
-from ethics_ai.checks.dependency_checks import DependencyCheck
+from ethica.checks.base import CheckStatus, CheckSeverity
+from ethica.checks.file_checks import FileExistsCheck
+from ethica.checks.dependency_checks import DependencyCheck
 
 
 class TestFileExistsCheck:

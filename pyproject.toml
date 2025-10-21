@@ -1,4 +1,4 @@
-# ABOUTME: Package configuration for ethics-ai-commons CLI tool
+# ABOUTME: Package configuration for ethica CLI tool
 # ABOUTME: Defines dependencies, build system, and development tools
 
 [build-system]
@@ -6,7 +6,7 @@ requires = ["setuptools>=65.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "ethics-ai-commons"
+name = "ethica"
 version = "0.1.0"
 description = "Framework-agnostic platform for AI ethics compliance checking"
 readme = "README.md"
@@ -46,7 +46,7 @@ dev = [
 ]
 
 [project.scripts]
-ethics-ai = "ethics_ai.__main__:app"
+ethica = "ethica.__main__:app"
 
 [project.urls]
 Homepage = "https://github.com/shellen/ethica"
@@ -56,10 +56,10 @@ Issues = "https://github.com/shellen/ethica/issues"
 
 [tool.setuptools.packages.find]
 where = ["."]
-include = ["ethics_ai*"]
+include = ["ethica*"]
 
 [tool.setuptools.package-data]
-ethics_ai = ["py.typed"]
+ethica = ["py.typed"]
 
 [tool.black]
 line-length = 100
@@ -93,4 +93,4 @@ testpaths = ["tests"]
 python_files = ["test_*.py"]
 python_classes = ["Test*"]
 python_functions = ["test_*"]
-addopts = "-v --cov=ethics_ai --cov-report=term-missing"
+addopts = "-v --cov=ethica --cov-report=term-missing"

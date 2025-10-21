@@ -1,4 +1,4 @@
-# ABOUTME: Implementation of 'ethics-ai init' command
+# ABOUTME: Implementation of 'ethica init' command
 # ABOUTME: Initializes AI ethics compliance in a project
 
 """
@@ -87,7 +87,7 @@ def init_command(
     console.print("\n[bold]Next steps:[/bold]")
     console.print("1. Review and customize .ai-ethics.yaml")
     console.print("2. Fill out template files in docs/")
-    console.print("3. Run [cyan]ethics-ai check[/cyan] to verify compliance")
+    console.print("3. Run [cyan]ethica check[/cyan] to verify compliance")
 
 
 def _create_unesco_templates(docs_dir: Path) -> None:

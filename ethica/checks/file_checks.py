@@ -7,7 +7,7 @@ File-based compliance checks.
 
 from pathlib import Path
 
-from ethics_ai.checks.base import BaseCheck, CheckResult, CheckStatus
+from ethica.checks.base import BaseCheck, CheckResult, CheckStatus
 
 
 class FileExistsCheck(BaseCheck):

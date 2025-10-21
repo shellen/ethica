@@ -1,4 +1,4 @@
-# ABOUTME: Implementation of 'ethics-ai check' command
+# ABOUTME: Implementation of 'ethica check' command
 # ABOUTME: Runs compliance checks and displays results
 
 """
@@ -13,8 +13,8 @@ import yaml
 from rich.console import Console
 from rich.table import Table
 
-from ethics_ai.core.checker import CheckEngine
-from ethics_ai.core.registry import FrameworkRegistry
+from ethica.core.checker import CheckEngine
+from ethica.core.registry import FrameworkRegistry
 
 console = Console()
 
@@ -52,7 +52,7 @@ def check_command(
     if not config_path.exists():
         console.print(
             "[red]Error:[/red] No .ai-ethics.yaml found. "
-            "Run [cyan]ethics-ai init[/cyan] first."
+            "Run [cyan]ethica init[/cyan] first."
         )
         raise typer.Exit(1)
 

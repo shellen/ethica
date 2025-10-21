@@ -8,9 +8,9 @@ Check engine for running ethics compliance checks.
 from pathlib import Path
 from typing import Any
 
-from ethics_ai.checks.base import CheckStatus
-from ethics_ai.checks.file_checks import FileExistsCheck
-from ethics_ai.checks.dependency_checks import DependencyCheck
+from ethica.checks.base import CheckStatus
+from ethica.checks.file_checks import FileExistsCheck
+from ethica.checks.dependency_checks import DependencyCheck
 
 
 class CheckEngine:

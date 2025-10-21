@@ -8,7 +8,7 @@ Tests for framework registry.
 import pytest
 from pathlib import Path
 
-from ethics_ai.core.registry import FrameworkRegistry
+from ethica.core.registry import FrameworkRegistry
 
 
 def test_list_frameworks():

@@ -1,4 +1,4 @@
-# Getting Started with Ethics AI Commons
+# Getting Started with Ethica
 
 This guide will walk you through setting up ethics compliance checking for your AI project.
 
@@ -7,7 +7,7 @@ This guide will walk you through setting up ethics compliance checking for your 
 ### From PyPI (when published)
 
 ```bash
-pip install ethics-ai-commons
+pip install ethica
 ```
 
 ### From Source
@@ -26,7 +26,7 @@ Navigate to your AI project directory and run:
 
 ```bash
 cd your-ai-project
-ethics-ai init
+ethica init
 ```
 
 This creates:
@@ -53,7 +53,7 @@ Open the generated templates and fill them out based on your project:
 ### Step 3: Run Your First Check
 
 ```bash
-ethics-ai check
+ethica check
 ```
 
 You'll see results grouped by ethical principle:
@@ -95,7 +95,7 @@ pip install fairlearn
 After making changes:
 
 ```bash
-ethics-ai check
+ethica check
 ```
 
 Keep iterating until you reach your target compliance level.
@@ -146,30 +146,30 @@ metadata:
 
 ```bash
 # Quick check during development
-ethics-ai check
+ethica check
 
 # Detailed check before committing
-ethics-ai check --verbose
+ethica check --verbose
 ```
 
 ### Pre-Release
 
 ```bash
 # Full compliance check
-ethics-ai check --level verified
+ethica check --level verified
 
 # Generate report for stakeholders
-ethics-ai check --output json > compliance-report.json
+ethica check --output json > compliance-report.json
 ```
 
 ### Exploring Frameworks
 
 ```bash
 # List available frameworks
-ethics-ai frameworks list
+ethica frameworks list
 
 # Learn about UNESCO framework
-ethics-ai frameworks info unesco-2021
+ethica frameworks info unesco-2021
 ```
 
 ## Next Steps

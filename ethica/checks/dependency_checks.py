@@ -9,7 +9,7 @@ import re
 from pathlib import Path
 from typing import Set
 
-from ethics_ai.checks.base import BaseCheck, CheckResult, CheckStatus
+from ethica.checks.base import BaseCheck, CheckResult, CheckStatus
 
 
 class DependencyCheck(BaseCheck):
