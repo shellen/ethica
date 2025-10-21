@@ -51,6 +51,9 @@ class FrameworkRegistry:
         """
         frameworks = []
         for category, fw_list in self.registry.get("frameworks", {}).items():
+            # Skip empty categories (where fw_list is None)
+            if fw_list is None:
+                continue
             for fw in fw_list:
                 fw_copy = fw.copy()
                 fw_copy["category"] = category
